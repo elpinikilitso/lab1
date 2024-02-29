@@ -19,7 +19,7 @@ while(1):
         for cookie in Cookies:
             Name = cookie.name
             if cookie.expires != 0:
-                print(Name + " which expires on", datetime.datetime.fromtimestamp(float(cookie.expires)))
+                print(Name + " which expires on", datetime.datetime.fromtimestamp(cookie.expires))
             else:
                 print(Name +" which does not expire.\n")
     else:
